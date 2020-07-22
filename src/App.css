@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Montserrat", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container {
+  margin: 0 auto;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  object-position: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  height: 91px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 60px 0 60px 111px;
+}
+
+header img {
+  height: 80px;
+  margin-right: 65px;
+}
+
+.counter {
+  width: 150px;
+  height: 150px;
+  background-color: #5c48d3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 96px;
+}
+
+.decrementation {
+  height: 11.25px;
+  width: 52.5px;
+}
+
+.incrementation {
+  height: 52.5px;
+  width: 52.5px;
+}
+
+.calc {
+  height: 400px;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.clicImageMinus {
+  /* height: 11.25px;
+  width: 52.5px; */
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  object-fit: contain;
+  object-position: center;
+}
+
+.clicImagePlus {
+  /* height: 52.5px;
+  width: 52.5px; */
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  object-fit: contain;
+  object-position: center;
+}
+button {
+  border-style: none;
+  background-color: white;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.reset {
+  width: 150px;
+  height: 60px;
+  background-color: #5c48d3;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 32px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
