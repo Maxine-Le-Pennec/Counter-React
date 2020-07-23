@@ -7,7 +7,7 @@ function Button({ value, funcCount }) {
     <div className="container">
       <div className="calc">
         <button
-          className="decrementation"
+          className={value <= 0 ? "hidden" : "decrementation"}
           onClick={() => {
             funcCount(value - 1);
           }}
@@ -20,7 +20,7 @@ function Button({ value, funcCount }) {
         <div className="counter">{value}</div>
 
         <button
-          className="incrementation"
+          className={value === 10 ? "hidden" : "incrementation"}
           onClick={() => {
             funcCount(value + 1);
           }}
